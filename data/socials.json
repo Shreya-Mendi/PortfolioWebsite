@@ -1,22 +1,17 @@
 [
   {
     "id": "1",
-    "title": "GitHub",
-    "url": "https://github.com/yourusername"
+    "title": "LinkedIn",
+    "url": "https://linkedin.com/in/shreya-mendi"
   },
   {
     "id": "2",
-    "title": "LinkedIn",
-    "url": "https://linkedin.com/in/yourprofile"
+    "title": "GitHub",
+    "url": "https://github.com/Shreya-Mendi"
   },
   {
     "id": "3",
-    "title": "Twitter",
-    "url": "https://twitter.com/yourusername"
-  },
-  {
-    "id": "4",
     "title": "Email",
-    "url": "mailto:your.email@example.com"
+    "url": "mailto:mendishreya@gmail.com"
   }
 ]
