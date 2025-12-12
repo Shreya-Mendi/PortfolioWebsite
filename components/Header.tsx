@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { Social } from "../typings";
+import HeaderCat from "./HeaderCat";
 
 type Props = {
   socials: Social[];
@@ -25,8 +26,11 @@ export default function Header({ socials }: Props) {
         transition={{
           duration: 1.5,
         }}
-        className=" flex flex-row items-center"
+        className=" flex flex-row items-center gap-2"
       >
+        {/* Cute Duke blue cat with wagging tail */}
+        <HeaderCat />
+
         {/* React social icons */}
         {socials.map((social) => (
           <SocialIcon

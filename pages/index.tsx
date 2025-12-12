@@ -10,7 +10,6 @@ import WorkExperience from "../components/WorkExperience";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import ContactMe from "../components/ContactMe";
-import TreasureMapPath from "../components/TreasureMapPath";
 import Link from "next/link";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Script from "next/script";
@@ -32,6 +31,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
     overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-darkGreen/80"
     >
       <Head>
+        <link rel="icon" type="image/svg+xml" href="/cat-favicon.svg" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -68,9 +68,6 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
 
       {/* Header */}
       <Header socials={socials} />
-
-      {/* Treasure Map Path with animated strawberry */}
-      <TreasureMapPath />
 
       {/* Hero */}
       <section id="hero" className="snap-start">
