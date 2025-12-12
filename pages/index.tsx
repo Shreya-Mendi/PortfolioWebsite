@@ -5,11 +5,6 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import styles from "../styles/Home.module.css";
 import { Experience, PageInfo, Skill, Project, Social } from "../typings";
-import { fetchPageInfo } from "../utils/fetchPageInfo";
-import { fetchExperiences } from "../utils/fetchExperience";
-import { fetchProjects } from "../utils/fetchProjects";
-import { fetchSkills } from "../utils/fetchSkills";
-import { fetchSocials } from "../utils/fetchSocials";
 import About from "../components/About";
 import WorkExperience from "../components/WorkExperience";
 import Skills from "../components/Skills";
@@ -18,6 +13,8 @@ import ContactMe from "../components/ContactMe";
 import Link from "next/link";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Script from "next/script";
+import path from "path";
+import { promises as fs } from "fs";
 
 type Props = {
   pageInfo: PageInfo;
@@ -117,11 +114,22 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
 export default Home;
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo = await fetchPageInfo();
-  const experiences = await fetchExperiences();
-  const skills = await fetchSkills();
-  const projects = await fetchProjects();
-  const socials = await fetchSocials();
+  const dataDirectory = path.join(process.cwd(), "data");
+
+  const pageInfoFile = await fs.readFile(dataDirectory + "/pageInfo.json", "utf8");
+  const pageInfo: PageInfo = JSON.parse(pageInfoFile);
+
+  const experiencesFile = await fs.readFile(dataDirectory + "/experiences.json", "utf8");
+  const experiences: Experience[] = JSON.parse(experiencesFile);
+
+  const skillsFile = await fs.readFile(dataDirectory + "/skills.json", "utf8");
+  const skills: Skill[] = JSON.parse(skillsFile);
+
+  const projectsFile = await fs.readFile(dataDirectory + "/projects.json", "utf8");
+  const projects: Project[] = JSON.parse(projectsFile);
+
+  const socialsFile = await fs.readFile(dataDirectory + "/socials.json", "utf8");
+  const socials: Social[] = JSON.parse(socialsFile);
 
   return {
     props: {

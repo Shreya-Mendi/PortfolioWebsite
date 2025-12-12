@@ -27,7 +27,7 @@ export default function WorkExperience({ experiences }: Props) {
               new Date(a.dateStarted).getTime()
           )
           .map((experience) => (
-            <ExperienceCard key={experience._id} experience={experience} />
+            <ExperienceCard key={experience.id} experience={experience} />
           ))}
       </div>
     </motion.div>

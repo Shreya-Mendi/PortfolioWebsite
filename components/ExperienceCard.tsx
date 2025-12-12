@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { urlFor } from "../sanity";
 import { Experience } from "../typings";
 
 type Props = { experience: Experience };
@@ -14,7 +13,7 @@ export default function ExperienceCard({ experience }: Props) {
         viewport={{ once: true }}
         transition={{ duration: 1.2 }}
         className=" md:invisible xl:visible md:h-0 w-28 h-28 md:w-0 rounded-full xl:w-[150px] xl:h-[150px] mb-2 object-cover object-center"
-        src={urlFor(experience?.companyImage).url()}
+        src={experience?.companyImage}
         alt=""
       />
       <div className="w-full px-0 md:px-10">
@@ -27,11 +26,11 @@ export default function ExperienceCard({ experience }: Props) {
               {experience?.company}
             </p>
             <div className="flex space-x-2 my-2">
-              {experience?.technologies.map((technology) => (
+              {experience?.technologies.map((technology, idx) => (
                 <img
-                  key={technology._id}
+                  key={idx}
                   className="h-10 w-10 rounded-full object-cover"
-                  src={urlFor(technology?.image).url()}
+                  src={technology?.image}
                   alt=""
                 />
               ))}
@@ -43,7 +42,7 @@ export default function ExperienceCard({ experience }: Props) {
             viewport={{ once: true }}
             transition={{ duration: 1.2 }}
             className="invisible md:visible xl:invisible xl:h-0 xl:w-0 h-0 w-0 md:h-28 md:w-28  rounded-full mb-0 object-cover object-center"
-            src={urlFor(experience?.companyImage).url()}
+            src={experience?.companyImage}
             alt=""
           />
         </div>
@@ -51,7 +50,7 @@ export default function ExperienceCard({ experience }: Props) {
           {new Date(experience?.dateStarted).toDateString()} -{" "}
           {experience.isCurrentlyWorkingHere
             ? "Present"
-            : new Date(experience?.dateEnded).toDateString()}
+            : experience.dateEnded ? new Date(experience.dateEnded).toDateString() : "Present"}
         </p>
       </div>
       <ul className="px-0 md:px-10 list-disc  text-black space-y-2 pr-5 text-justify ml-0 text-sm md:text-lg pl-5 overflow-y-scroll scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-darkGreen/80">

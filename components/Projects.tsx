@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { urlFor } from "../sanity";
 import { Project } from "../typings";
 
 type Props = { projects: Project[] };
@@ -20,7 +19,7 @@ export default function Projects({ projects }: Props) {
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-darkGreen/80">
         {projects?.map((project, i) => (
           <div
-            key={project._id}
+            key={project.id}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 md:p-44 h-screen"
           >
             <motion.img
@@ -29,7 +28,7 @@ export default function Projects({ projects }: Props) {
               transition={{ duration: 1.2 }}
               viewport={{ once: true }}
               className=" h-28 xl:h-80 md:h-72 object-contain"
-              src={urlFor(project?.image).url()}
+              src={project?.image}
               alt=""
             />
 
@@ -41,11 +40,11 @@ export default function Projects({ projects }: Props) {
                 {project?.title}
               </h4>
               <div className="flex items-center space-x-2 justify-center ">
-                {project?.technologies.map((technology) => (
+                {project?.technologies.map((technology, idx) => (
                   <img
-                    key={technology._id}
+                    key={idx}
                     className="h-10 w-10 rounded-full object-cover"
-                    src={urlFor(technology?.image).url()}
+                    src={technology?.image}
                     alt=""
                   />
                 ))}

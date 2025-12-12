@@ -30,7 +30,7 @@ export default function Header({ socials }: Props) {
         {/* React social icons */}
         {socials.map((social) => (
           <SocialIcon
-            key={social._id}
+            key={social.id}
             url={social.url}
             fgColor="gray"
             bgColor="transparent"
