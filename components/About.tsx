@@ -41,6 +41,21 @@ export default function About({ pageInfo }: Props) {
         <p className="text-sm md:text-lg lg:text-lg text-justify">
           {pageInfo?.backgroundInformation}
         </p>
+        <motion.div
+          className="flex items-center gap-2 text-darkGreen font-bold text-lg md:text-xl"
+          animate={{
+            scale: [1, 1.05, 1],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <span className="text-2xl">💙</span>
+          <span>Go Duke Blue Devils!</span>
+          <span className="text-2xl">💙</span>
+        </motion.div>
       </div>
     </motion.div>
   );
