@@ -27,7 +27,7 @@ export default function ContactMe({ pageInfo }: Props) {
       </h3>
       <div className="flex flex-col space-y-4 md:space-y-5 lg:space-y-6 xl:space-y-6 2xl:space-y-10">
         <h4 className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-semibold text-center md:text-left">
-          Let's build something amazing together! 🚀{" "}
+          Let&apos;s build something amazing together! 🚀{" "}
           <span className="decoration-darkGreen/50 underline">Drop me a message.</span>
         </h4>
 
