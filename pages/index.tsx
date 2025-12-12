@@ -49,7 +49,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <title>Shreya Mendi | AI/ML Engineer</title>
+        <title>Shreya Mendi | MEng AI Student @ Duke</title>
       </Head>
 
       {/* Google Analytics */}
