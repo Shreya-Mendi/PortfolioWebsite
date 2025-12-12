@@ -1,10 +1,12 @@
-# Mitch's Portfolio Website
+# Shreya Mendi's Portfolio Website
 
-![alt text](https://cdn.sanity.io/images/xbn4zmfs/production/3de98614552f63c0c1446910ce241b3a67dfb0ef-2268x748.png)
+A modern, responsive portfolio website built with Next.js, TypeScript, Framer Motion, and Tailwind CSS. This portfolio showcases my work as a Machine Learning Engineer and AI Product Engineer, featuring my projects, work experience, skills, and professional background.
 
-I wanted to learn more about Next JS, Typescript, Framer Motion and Tailwind and so I used my portfolio website as an opportunity to do this. The website was originally inspired by a YouTube video by Sonny Sangha, and over time has morphed into something I am quite proud of. The portfolio uses Sanity as backend, so that it can update the information without rebuilding the application.
+The portfolio uses Sanity CMS as a backend, enabling dynamic content updates without rebuilding the application. This architecture provides flexibility for keeping the portfolio up-to-date with latest projects and achievements.
 
-Want to see it in action? You can find the website [here](https://mitchellsparrow.com)!
+## Updating Portfolio Content
+
+To update the portfolio content (projects, work experience, skills, etc.), see the comprehensive guide in [SANITY_CONTENT_GUIDE.md](./SANITY_CONTENT_GUIDE.md). This guide includes all the resume information formatted for Sanity CMS.
 
 # Next JS:
 
@@ -48,3 +50,39 @@ To deploy sanity:
 ```
 sanity deploy
 ```
+
+# Technology Stack
+
+- **Frontend**: Next.js 13, React 18, TypeScript
+- **Styling**: Tailwind CSS with custom color theme
+- **Animations**: Framer Motion
+- **CMS**: Sanity for content management
+- **Forms**: React Hook Form
+- **Additional**: React Simple Typewriter, React Social Icons, Heroicons
+
+# Features
+
+- Responsive design optimized for all screen sizes
+- Dynamic content management through Sanity CMS
+- Smooth animations and transitions
+- Interactive typing effect on hero section
+- Scrollable work experience and projects sections
+- Contact form with mailto integration
+- Google Analytics integration
+- SEO optimized
+
+# Portfolio Sections
+
+- **Hero**: Landing section with animated typewriter effect
+- **About**: Professional background and bio
+- **Work Experience**: Scrollable cards showing employment history
+- **Skills**: Grid layout of technical skills with progress indicators
+- **Projects**: Carousel of featured projects
+- **Contact**: Contact information and form
+
+# Contact
+
+- **Email**: mendishreya@gmail.com
+- **Phone**: +1 (919) 608-0547
+- **Location**: Durham, NC
+- **LinkedIn**: [linkedin.com/in/shreya-mendi](https://linkedin.com/in/shreya-mendi)
