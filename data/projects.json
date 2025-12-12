@@ -1,26 +1,51 @@
 [
   {
     "id": "1",
-    "title": "Portfolio Website",
-    "image": "/images/projects/portfolio.png",
-    "linkToBuild": "https://yourportfolio.vercel.app",
-    "summary": "A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations with Framer Motion and a fully responsive design.",
+    "title": "Inflationship - Inflation Prediction",
+    "image": "/images/projects/inflationship.png",
+    "linkToBuild": "https://github.com/Shreya-Mendi/inflationship",
+    "summary": "Built a SARIMAX inflation forecasting pipeline combining port traffic indicators with CPI data, reducing forecast error to 0.67–1.69% MAPE across major CPI categories. Validated model stability via 5-fold rolling cross-validation, achieving reliable predictive lift over CPI-only baselines.",
     "technologies": [
-      { "title": "Next.js", "image": "/images/skills/nextjs.png" },
-      { "title": "TypeScript", "image": "/images/skills/typescript.png" },
-      { "title": "Tailwind CSS", "image": "/images/skills/tailwind.png" }
+      { "title": "Python", "image": "/images/skills/python.png" },
+      { "title": "SARIMAX", "image": "/images/skills/stats.png" },
+      { "title": "Machine Learning", "image": "/images/skills/ml.png" }
     ]
   },
   {
     "id": "2",
-    "title": "Task Management App",
-    "image": "/images/projects/task-app.png",
-    "linkToBuild": "https://github.com/yourusername/task-app",
-    "summary": "A full-stack task management application with user authentication, real-time updates, and collaborative features.",
+    "title": "Alba - AI Carbon Footprint Tracker",
+    "image": "/images/projects/alba.png",
+    "linkToBuild": "https://github.com/Shreya-Mendi/alba",
+    "summary": "Built a real-time, privacy-first Chrome extension estimating energy, carbon, and water footprint for AI prompts using model metadata and GitHub Models API. Implemented live footprint labels, heuristic + AI prompt optimization, and a client-side dashboard with daily impact summaries.",
     "technologies": [
-      { "title": "React", "image": "/images/skills/react.png" },
-      { "title": "Node.js", "image": "/images/skills/nodejs.png" },
-      { "title": "MongoDB", "image": "/images/skills/mongodb.png" }
+      { "title": "JavaScript", "image": "/images/skills/javascript.png" },
+      { "title": "Chrome Extension", "image": "/images/skills/chrome.png" },
+      { "title": "GitHub API", "image": "/images/skills/github.png" }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "AI AUDIT - EU AI Act Compliance",
+    "image": "/images/projects/ai-audit.png",
+    "linkToBuild": "https://github.com/Shreya-Mendi/ai-audit",
+    "summary": "Built an EU AI Act compliance assessment system using TF-IDF + Logistic Regression, rule-based article evaluation (Articles 5, 6, 9, 10, 14), and automated remediation planning. Deployed full-stack ML workflow with MLflow, FastAPI, Docker, and Streamlit on Google Cloud Run, enabling explainable risk scoring and documentation audits.",
+    "technologies": [
+      { "title": "Python", "image": "/images/skills/python.png" },
+      { "title": "MLflow", "image": "/images/skills/mlflow.png" },
+      { "title": "Docker", "image": "/images/skills/docker.png" },
+      { "title": "FastAPI", "image": "/images/skills/fastapi.png" }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Semantic Jury - Legal Search Engine",
+    "image": "/images/projects/semantic-jury.png",
+    "linkToBuild": "https://github.com/Shreya-Mendi/semantic-jury",
+    "summary": "Developed a semantic search engine for legal documents using embedding-based retrieval and citation-link modeling to surface semantically similar case law and statutes. Implemented vector search pipelines with passage ranking to support explainable legal research and faster knowledge discovery.",
+    "technologies": [
+      { "title": "Python", "image": "/images/skills/python.png" },
+      { "title": "NLP", "image": "/images/skills/nlp.png" },
+      { "title": "Vector Search", "image": "/images/skills/vector.png" }
     ]
   }
 ]
