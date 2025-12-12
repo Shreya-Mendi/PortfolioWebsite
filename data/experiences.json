@@ -2,15 +2,15 @@
   {
     "id": "1",
     "jobTitle": "DevOps Engineer",
-    "companyImage": "/images/companies/assetmantle.png",
+    "companyImage": "https://via.placeholder.com/200x200/68B2A0/FFFFFF?text=Assetmantle",
     "company": "Assetmantle Pvt Ltd",
     "dateStarted": "2023-09-01",
     "dateEnded": "2025-05-31",
     "isCurrentlyWorkingHere": false,
     "technologies": [
-      { "title": "AWS", "image": "/images/skills/aws.png" },
-      { "title": "Kubernetes", "image": "/images/skills/kubernetes.png" },
-      { "title": "Docker", "image": "/images/skills/docker.png" }
+      { "title": "AWS", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+      { "title": "Kubernetes", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+      { "title": "Docker", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" }
     ],
     "points": [
       "Strategically managed AWS and Hetzner cloud infrastructure to reduce operational costs by 38% and enhanced security",
@@ -20,16 +20,16 @@
   {
     "id": "2",
     "jobTitle": "Software Development Intern",
-    "companyImage": "/images/companies/hpe.png",
+    "companyImage": "https://via.placeholder.com/200x200/0096D6/FFFFFF?text=HPE",
     "company": "Hewlett Packard Enterprise Globalsoft Pvt Ltd",
     "dateStarted": "2023-01-01",
     "dateEnded": "2023-07-31",
     "isCurrentlyWorkingHere": false,
     "technologies": [
-      { "title": "Docker", "image": "/images/skills/docker.png" },
-      { "title": "Jenkins", "image": "/images/skills/jenkins.png" },
-      { "title": "Python", "image": "/images/skills/python.png" },
-      { "title": "Linux", "image": "/images/skills/linux.png" }
+      { "title": "Docker", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { "title": "Jenkins", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" },
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "Linux", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" }
     ],
     "points": [
       "Built Dockerized services on Linux, automating CI/CD workflows with Jenkins, shell scripting, and cloud computing platforms",

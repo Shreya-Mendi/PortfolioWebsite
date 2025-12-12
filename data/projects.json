@@ -2,50 +2,50 @@
   {
     "id": "1",
     "title": "Inflationship - Inflation Prediction",
-    "image": "/images/projects/inflationship.png",
+    "image": "https://via.placeholder.com/800x600/68B2A0/FFFFFF?text=Inflationship",
     "linkToBuild": "https://github.com/Shreya-Mendi/inflationship",
     "summary": "Built a SARIMAX inflation forecasting pipeline combining port traffic indicators with CPI data, reducing forecast error to 0.67–1.69% MAPE across major CPI categories. Validated model stability via 5-fold rolling cross-validation, achieving reliable predictive lift over CPI-only baselines.",
     "technologies": [
-      { "title": "Python", "image": "/images/skills/python.png" },
-      { "title": "SARIMAX", "image": "/images/skills/stats.png" },
-      { "title": "Machine Learning", "image": "/images/skills/ml.png" }
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "Pandas", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+      { "title": "NumPy", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" }
     ]
   },
   {
     "id": "2",
     "title": "Alba - AI Carbon Footprint Tracker",
-    "image": "/images/projects/alba.png",
+    "image": "https://via.placeholder.com/800x600/4CAF50/FFFFFF?text=Alba",
     "linkToBuild": "https://github.com/Shreya-Mendi/alba",
     "summary": "Built a real-time, privacy-first Chrome extension estimating energy, carbon, and water footprint for AI prompts using model metadata and GitHub Models API. Implemented live footprint labels, heuristic + AI prompt optimization, and a client-side dashboard with daily impact summaries.",
     "technologies": [
-      { "title": "JavaScript", "image": "/images/skills/javascript.png" },
-      { "title": "Chrome Extension", "image": "/images/skills/chrome.png" },
-      { "title": "GitHub API", "image": "/images/skills/github.png" }
+      { "title": "JavaScript", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { "title": "Chrome", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" },
+      { "title": "GitHub", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" }
     ]
   },
   {
     "id": "3",
     "title": "AI AUDIT - EU AI Act Compliance",
-    "image": "/images/projects/ai-audit.png",
+    "image": "https://via.placeholder.com/800x600/2196F3/FFFFFF?text=AI+AUDIT",
     "linkToBuild": "https://github.com/Shreya-Mendi/ai-audit",
     "summary": "Built an EU AI Act compliance assessment system using TF-IDF + Logistic Regression, rule-based article evaluation (Articles 5, 6, 9, 10, 14), and automated remediation planning. Deployed full-stack ML workflow with MLflow, FastAPI, Docker, and Streamlit on Google Cloud Run, enabling explainable risk scoring and documentation audits.",
     "technologies": [
-      { "title": "Python", "image": "/images/skills/python.png" },
-      { "title": "MLflow", "image": "/images/skills/mlflow.png" },
-      { "title": "Docker", "image": "/images/skills/docker.png" },
-      { "title": "FastAPI", "image": "/images/skills/fastapi.png" }
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "Docker", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { "title": "FastAPI", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+      { "title": "Google Cloud", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" }
     ]
   },
   {
     "id": "4",
     "title": "Semantic Jury - Legal Search Engine",
-    "image": "/images/projects/semantic-jury.png",
+    "image": "https://via.placeholder.com/800x600/9C27B0/FFFFFF?text=Semantic+Jury",
     "linkToBuild": "https://github.com/Shreya-Mendi/semantic-jury",
     "summary": "Developed a semantic search engine for legal documents using embedding-based retrieval and citation-link modeling to surface semantically similar case law and statutes. Implemented vector search pipelines with passage ranking to support explainable legal research and faster knowledge discovery.",
     "technologies": [
-      { "title": "Python", "image": "/images/skills/python.png" },
-      { "title": "NLP", "image": "/images/skills/nlp.png" },
-      { "title": "Vector Search", "image": "/images/skills/vector.png" }
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "TensorFlow", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+      { "title": "Jupyter", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" }
     ]
   }
 ]

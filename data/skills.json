@@ -2,73 +2,73 @@
   {
     "id": "1",
     "title": "Python",
-    "image": "/images/skills/python.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     "progress": 95
   },
   {
     "id": "2",
     "title": "SQL",
-    "image": "/images/skills/sql.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
     "progress": 85
   },
   {
     "id": "3",
     "title": "AWS",
-    "image": "/images/skills/aws.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
     "progress": 85
   },
   {
     "id": "4",
     "title": "Docker",
-    "image": "/images/skills/docker.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
     "progress": 90
   },
   {
     "id": "5",
     "title": "Kubernetes",
-    "image": "/images/skills/kubernetes.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
     "progress": 85
   },
   {
     "id": "6",
     "title": "GitHub",
-    "image": "/images/skills/github.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
     "progress": 90
   },
   {
     "id": "7",
     "title": "Grafana",
-    "image": "/images/skills/grafana.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg",
     "progress": 80
   },
   {
     "id": "8",
     "title": "Prometheus",
-    "image": "/images/skills/prometheus.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg",
     "progress": 75
   },
   {
     "id": "9",
     "title": "Linux",
-    "image": "/images/skills/linux.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
     "progress": 85
   },
   {
     "id": "10",
     "title": "Shell Scripting",
-    "image": "/images/skills/bash.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
     "progress": 80
   },
   {
     "id": "11",
     "title": "Machine Learning",
-    "image": "/images/skills/ml.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
     "progress": 90
   },
   {
     "id": "12",
     "title": "TensorFlow",
-    "image": "/images/skills/tensorflow.png",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
     "progress": 80
   }
 ]
