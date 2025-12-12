@@ -10,6 +10,7 @@ import WorkExperience from "../components/WorkExperience";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import ContactMe from "../components/ContactMe";
+import LeftPawPrints from "../components/LeftPawPrints";
 import Link from "next/link";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Script from "next/script";
@@ -68,6 +69,9 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
 
       {/* Header */}
       <Header socials={socials} />
+
+      {/* Left side paw prints */}
+      <LeftPawPrints />
 
       {/* Hero */}
       <section id="hero" className="snap-start">
