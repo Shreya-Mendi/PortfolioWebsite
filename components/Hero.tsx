@@ -10,9 +10,10 @@ export default function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
     words: [
       `Hi, the name's ${pageInfo?.name}`,
-      "I like riding my 🚲",
-      "I_like_to_code.py",
-      "And I'm addicted to ☕️",
+      "I like to ride my motorcycle 🏍️",
+      "I like ice cream 🍦",
+      "I love building AI models 🤖",
+      "Addicted to chocolates 🍫",
     ],
     loop: true,
     delaySpeed: 2000,
@@ -34,7 +35,7 @@ export default function Hero({ pageInfo }: Props) {
         </h2>
         <h1 className="text-2xl md:text-5xl lg:text-6xl font-semibold px-10">
           <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#68B2A0" />
+          <Cursor cursorColor="#012169" />
         </h1>
 
         <div className="pt-5">
