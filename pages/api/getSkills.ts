@@ -1,23 +1,22 @@
-
-
 import type { NextApiRequest, NextApiResponse } from "next";
-import { groq } from "next-sanity";
-import { sanityClient } from "../../sanity";
 import { Skill } from "../../typings";
-
-const query = groq`
-    *[_type == 'skill']
-`;
+import path from "path";
+import { promises as fs } from "fs";
 
 type Data = {
-    skills: Skill[];
+  skills: Skill[];
 };
 
 export default async function handler(
-    req: NextApiRequest,
-    res: NextApiResponse<Data>
-  ) {
-    const skills: Skill[] = await sanityClient.fetch(query);
-    res.status(200).json({ skills })
-  }
-  
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
+  const jsonDirectory = path.join(process.cwd(), "data");
+  const fileContents = await fs.readFile(
+    jsonDirectory + "/skills.json",
+    "utf8"
+  );
+  const skills: Skill[] = JSON.parse(fileContents);
+
+  res.status(200).json({ skills });
+}

@@ -1,26 +1,22 @@
-
-
 import type { NextApiRequest, NextApiResponse } from "next";
-import { groq } from "next-sanity";
-import { sanityClient } from "../../sanity";
 import { Project } from "../../typings";
-
-const query = groq`
-    *[_type == 'project'] {
-      ...,
-      technologies[]->
-    }
-`;
+import path from "path";
+import { promises as fs } from "fs";
 
 type Data = {
-    projects: Project[];
+  projects: Project[];
 };
 
 export default async function handler(
-    req: NextApiRequest,
-    res: NextApiResponse<Data>
-  ) {
-    const projects: Project[] = await sanityClient.fetch(query);
-    res.status(200).json({ projects })
-  }
-  
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
+  const jsonDirectory = path.join(process.cwd(), "data");
+  const fileContents = await fs.readFile(
+    jsonDirectory + "/projects.json",
+    "utf8"
+  );
+  const projects: Project[] = JSON.parse(fileContents);
+
+  res.status(200).json({ projects });
+}

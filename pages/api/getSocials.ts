@@ -1,23 +1,22 @@
-
-
 import type { NextApiRequest, NextApiResponse } from "next";
-import { groq } from "next-sanity";
-import { sanityClient } from "../../sanity";
 import { Social } from "../../typings";
-
-const query = groq`
-    *[_type == 'social']
-`;
+import path from "path";
+import { promises as fs } from "fs";
 
 type Data = {
-    socials: Social[];
+  socials: Social[];
 };
 
 export default async function handler(
-    req: NextApiRequest,
-    res: NextApiResponse<Data>
-  ) {
-    const socials: Social[] = await sanityClient.fetch(query);
-    res.status(200).json({ socials })
-  }
-  
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
+  const jsonDirectory = path.join(process.cwd(), "data");
+  const fileContents = await fs.readFile(
+    jsonDirectory + "/socials.json",
+    "utf8"
+  );
+  const socials: Social[] = JSON.parse(fileContents);
+
+  res.status(200).json({ socials });
+}

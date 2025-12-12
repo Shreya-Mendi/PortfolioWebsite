@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "React",
+    "image": "/images/skills/react.png",
+    "progress": 85
+  },
+  {
+    "id": "2",
+    "title": "TypeScript",
+    "image": "/images/skills/typescript.png",
+    "progress": 80
+  },
+  {
+    "id": "3",
+    "title": "Next.js",
+    "image": "/images/skills/nextjs.png",
+    "progress": 75
+  },
+  {
+    "id": "4",
+    "title": "Node.js",
+    "image": "/images/skills/nodejs.png",
+    "progress": 70
+  },
+  {
+    "id": "5",
+    "title": "Python",
+    "image": "/images/skills/python.png",
+    "progress": 80
+  },
+  {
+    "id": "6",
+    "title": "Java",
+    "image": "/images/skills/java.png",
+    "progress": 75
+  },
+  {
+    "id": "7",
+    "title": "Git",
+    "image": "/images/skills/git.png",
+    "progress": 85
+  },
+  {
+    "id": "8",
+    "title": "Tailwind CSS",
+    "image": "/images/skills/tailwind.png",
+    "progress": 90
+  }
+]

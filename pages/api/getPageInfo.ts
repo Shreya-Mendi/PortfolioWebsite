@@ -1,23 +1,22 @@
-
-
 import type { NextApiRequest, NextApiResponse } from "next";
-import { groq } from "next-sanity";
-import { sanityClient } from "../../sanity";
 import { PageInfo } from "../../typings";
-
-const query = groq`
-    *[_type == 'pageInfo'][0]
-`;
+import path from "path";
+import { promises as fs } from "fs";
 
 type Data = {
-    pageInfo: PageInfo;
+  pageInfo: PageInfo;
 };
 
 export default async function handler(
-    req: NextApiRequest,
-    res: NextApiResponse<Data>
-  ) {
-    const pageInfo: PageInfo = await sanityClient.fetch(query);
-    res.status(200).json({ pageInfo })
-  }
-  
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
+  const jsonDirectory = path.join(process.cwd(), "data");
+  const fileContents = await fs.readFile(
+    jsonDirectory + "/pageInfo.json",
+    "utf8"
+  );
+  const pageInfo: PageInfo = JSON.parse(fileContents);
+
+  res.status(200).json({ pageInfo });
+}

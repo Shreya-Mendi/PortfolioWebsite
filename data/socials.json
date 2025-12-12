@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "GitHub",
+    "url": "https://github.com/yourusername"
+  },
+  {
+    "id": "2",
+    "title": "LinkedIn",
+    "url": "https://linkedin.com/in/yourprofile"
+  },
+  {
+    "id": "3",
+    "title": "Twitter",
+    "url": "https://twitter.com/yourusername"
+  },
+  {
+    "id": "4",
+    "title": "Email",
+    "url": "mailto:your.email@example.com"
+  }
+]

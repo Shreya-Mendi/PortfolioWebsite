@@ -6,7 +6,6 @@ This guide will help you deploy your Next.js portfolio to Vercel.
 
 - GitHub account (your repository should be pushed to GitHub)
 - Vercel account (sign up at https://vercel.com)
-- Sanity project ID (from your Sanity dashboard)
 
 ## Step 1: Connect Your Repository to Vercel
 
@@ -25,31 +24,23 @@ Vercel will auto-detect that this is a Next.js project. You can keep the default
 - **Output Directory**: `.next` (auto-detected)
 - **Install Command**: `npm install` (auto-detected)
 
-## Step 3: Add Environment Variables
+## Step 3: Add Environment Variables (Optional)
 
-Before deploying, add these environment variables in the Vercel dashboard:
+Your portfolio now uses JSON files for content, so most environment variables are optional. However, you may want to set:
 
-### Required Environment Variables:
+### Optional Environment Variables:
 
-1. **NEXT_PUBLIC_SANITY_PROJECT_ID**
-   - Value: Your Sanity project ID (find it in your Sanity dashboard at https://sanity.io/manage)
-   - Example: `xbn4zmfs`
-
-2. **NEXT_PUBLIC_SANITY_DATASET**
-   - Value: `production`
-   - This is your Sanity dataset name
-
-3. **NEXT_PUBLIC_BASE_URL**
+1. **NEXT_PUBLIC_BASE_URL**
    - Value: Your Vercel deployment URL
    - Example: `https://your-site.vercel.app`
-   - Note: You can set this after first deployment, then redeploy
+   - Note: Only needed if you want to use absolute URLs in your app
 
-### How to Add Environment Variables in Vercel:
+### How to Add Environment Variables in Vercel (if needed):
 
 1. In your Vercel project dashboard, go to **Settings** → **Environment Variables**
-2. Add each variable:
-   - Enter the variable name (e.g., `NEXT_PUBLIC_SANITY_PROJECT_ID`)
-   - Enter the value
+2. Add the variable:
+   - Enter the variable name: `NEXT_PUBLIC_BASE_URL`
+   - Enter the value: your Vercel URL
    - Select environments: **Production**, **Preview**, and **Development**
    - Click **Save**
 
@@ -59,9 +50,9 @@ Before deploying, add these environment variables in the Vercel dashboard:
 2. Vercel will build and deploy your site (this takes 1-2 minutes)
 3. Once complete, you'll get a production URL like `https://your-site.vercel.app`
 
-## Step 5: Update Base URL (Important!)
+## Step 5: Update Base URL (Optional)
 
-After your first deployment:
+After your first deployment (if you added the NEXT_PUBLIC_BASE_URL variable):
 
 1. Copy your production URL (e.g., `https://your-site.vercel.app`)
 2. Go to **Settings** → **Environment Variables**
@@ -87,39 +78,73 @@ Once set up, Vercel will automatically deploy:
 
 ### Build Fails
 
-- Check that all environment variables are set correctly
 - Check the build logs in Vercel for specific errors
 - Make sure `npm run build` works locally
+- Ensure all JSON files in `/data` are valid JSON
 
-### Sanity Data Not Loading
+### Data Not Loading
 
-- Verify `NEXT_PUBLIC_SANITY_PROJECT_ID` matches your Sanity project
-- Verify `NEXT_PUBLIC_SANITY_DATASET` is set to `production`
-- Check your Sanity CORS settings allow your Vercel domain
+- Check that all JSON files in `/data` directory are properly formatted
+- Verify the JSON structure matches the TypeScript types
+- Make sure images referenced in JSON files exist in `/public/images`
 
 ### API Routes Not Working
 
-- Verify `NEXT_PUBLIC_BASE_URL` is set to your actual deployment URL
-- Make sure it includes `https://` and does NOT have a trailing slash
-
-## Finding Your Sanity Project ID
-
-1. Go to https://sanity.io/manage
-2. Select your project
-3. Go to **Settings** → **API**
-4. Copy your **Project ID**
+- Verify all JSON files exist in the `/data` directory
+- Check that file names match exactly: `pageInfo.json`, `experiences.json`, `projects.json`, `skills.json`, `socials.json`
 
 ## Local Development
 
-For local development, create a `.env.local` file:
+For local development, create a `.env.local` file (optional):
 
 ```bash
-NEXT_PUBLIC_SANITY_DATASET=production
-NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id_here
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
 ```
 
 Never commit `.env.local` to Git (it's already in `.gitignore`).
+
+## Updating Your Portfolio Content
+
+Your portfolio content is now stored in JSON files in the `/data` directory. To update your portfolio:
+
+1. **Edit the JSON files** in `/data`:
+   - `pageInfo.json` - Your personal info, bio, contact details
+   - `experiences.json` - Work experience and internships
+   - `projects.json` - Your projects
+   - `skills.json` - Technical skills
+   - `socials.json` - Social media links
+
+2. **Add images** to `/public/images`:
+   - Create subdirectories: `/public/images/skills`, `/public/images/projects`, `/public/images/companies`
+   - Update JSON files with correct image paths (e.g., `/images/skills/react.png`)
+
+3. **Commit and push** your changes:
+   ```bash
+   git add data/ public/images/
+   git commit -m "Update portfolio content"
+   git push
+   ```
+
+4. **Vercel auto-deploys** - Your changes will be live in 1-2 minutes!
+
+### Quick Update Example:
+
+To add a new project, edit `data/projects.json`:
+
+```json
+{
+  "id": "3",
+  "title": "My New Project",
+  "image": "/images/projects/new-project.png",
+  "linkToBuild": "https://github.com/yourusername/new-project",
+  "summary": "Description of your project",
+  "technologies": [
+    { "title": "React", "image": "/images/skills/react.png" }
+  ]
+}
+```
+
+Then commit and push - Vercel handles the rest!
 
 ## Resources
 

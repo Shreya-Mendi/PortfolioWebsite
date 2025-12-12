@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1",
+    "jobTitle": "Software Engineering Intern",
+    "companyImage": "/images/companies/company1.png",
+    "company": "Tech Company",
+    "dateStarted": "2024-06-01",
+    "dateEnded": "2024-08-31",
+    "isCurrentlyWorkingHere": false,
+    "technologies": [
+      { "title": "React", "image": "/images/skills/react.png" },
+      { "title": "Node.js", "image": "/images/skills/nodejs.png" },
+      { "title": "TypeScript", "image": "/images/skills/typescript.png" }
+    ],
+    "points": [
+      "Developed and maintained web applications using React and Node.js",
+      "Collaborated with cross-functional teams to deliver features",
+      "Implemented responsive UI components with TypeScript"
+    ]
+  },
+  {
+    "id": "2",
+    "jobTitle": "Teaching Assistant",
+    "companyImage": "/images/companies/university.png",
+    "company": "University",
+    "dateStarted": "2024-01-01",
+    "dateEnded": null,
+    "isCurrentlyWorkingHere": true,
+    "technologies": [
+      { "title": "Python", "image": "/images/skills/python.png" },
+      { "title": "Java", "image": "/images/skills/java.png" }
+    ],
+    "points": [
+      "Assisted students with programming assignments and concepts",
+      "Conducted weekly lab sessions for introductory programming courses",
+      "Graded assignments and provided constructive feedback"
+    ]
+  }
+]

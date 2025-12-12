@@ -1,0 +1,10 @@
+{
+  "name": "Your Name",
+  "role": "Software Engineering Student",
+  "heroImage": "/images/hero-image.jpg",
+  "backgroundInformation": "I'm a passionate software engineering student with a keen interest in full-stack development. I love building projects that solve real-world problems and learning new technologies along the way.",
+  "profilePic": "/images/profile.jpg",
+  "phoneNumber": "+1 (555) 123-4567",
+  "email": "your.email@example.com",
+  "address": "Your City, State"
+}

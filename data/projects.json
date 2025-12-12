@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Portfolio Website",
+    "image": "/images/projects/portfolio.png",
+    "linkToBuild": "https://yourportfolio.vercel.app",
+    "summary": "A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations with Framer Motion and a fully responsive design.",
+    "technologies": [
+      { "title": "Next.js", "image": "/images/skills/nextjs.png" },
+      { "title": "TypeScript", "image": "/images/skills/typescript.png" },
+      { "title": "Tailwind CSS", "image": "/images/skills/tailwind.png" }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Task Management App",
+    "image": "/images/projects/task-app.png",
+    "linkToBuild": "https://github.com/yourusername/task-app",
+    "summary": "A full-stack task management application with user authentication, real-time updates, and collaborative features.",
+    "technologies": [
+      { "title": "React", "image": "/images/skills/react.png" },
+      { "title": "Node.js", "image": "/images/skills/nodejs.png" },
+      { "title": "MongoDB", "image": "/images/skills/mongodb.png" }
+    ]
+  }
+]

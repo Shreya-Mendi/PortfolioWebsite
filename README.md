@@ -2,7 +2,7 @@
 
 ![alt text](https://cdn.sanity.io/images/xbn4zmfs/production/3de98614552f63c0c1446910ce241b3a67dfb0ef-2268x748.png)
 
-I wanted to learn more about Next JS, Typescript, Framer Motion and Tailwind and so I used my portfolio website as an opportunity to do this. The website was originally inspired by a YouTube video by Sonny Sangha, and over time has morphed into something I am quite proud of. The portfolio uses Sanity as backend, so that it can update the information without rebuilding the application.
+I wanted to learn more about Next JS, Typescript, Framer Motion and Tailwind and so I used my portfolio website as an opportunity to do this. The website was originally inspired by a YouTube video by Sonny Sangha, and over time has morphed into something I am quite proud of. The portfolio uses JSON files for content management, making it easy to update without any external dependencies.
 
 Want to see it in action? You can find the website [here](https://mitchellsparrow.com)!
 
@@ -45,17 +45,19 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-# Sanity:
+# Content Management:
 
-To just run sanity:
+Your portfolio content is managed through JSON files in the `/data` directory. This makes it:
+- ✅ **100% Free** - No external CMS needed
+- ✅ **Easy to Update** - Just edit JSON files
+- ✅ **Version Controlled** - All changes tracked in Git
+- ✅ **Auto-Deploy** - Push to GitHub = Live in 2 minutes
 
-```
-cd sanity
-sanity start
-```
+## Quick Content Update:
 
-To deploy sanity:
+1. Edit files in `/data/` (pageInfo, experiences, projects, skills, socials)
+2. Add images to `/public/images/`
+3. Commit and push to GitHub
+4. Vercel auto-deploys your changes!
 
-```
-sanity deploy
-```
+**For detailed instructions, see [CONTENT_GUIDE.md](./CONTENT_GUIDE.md)**
