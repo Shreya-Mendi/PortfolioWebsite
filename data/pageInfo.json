@@ -1,9 +1,9 @@
 {
   "name": "Shreya Mendi",
   "role": "MEng AI Student @ Duke University",
-  "heroImage": "https://via.placeholder.com/1920x1080/012169/FFFFFF?text=Shreya+Mendi+%7C+Duke+University",
+  "heroImage": "/images/hero-image.jpg",
   "backgroundInformation": "Focused on building intelligent systems that create real-world impact. Skilled in developing and optimizing models, analyzing data, and collaborating across teams. I enjoy turning research ideas into practical solutions and scalable products. Bring a strong problem-solving mindset to roles such as Machine Learning Engineer, Deep Learning Engineer, Applied Scientist, or AI Product Engineer.",
-  "profilePic": "https://via.placeholder.com/500x500/012169/FFFFFF?text=SM",
+  "profilePic": "/images/profile.jpg",
   "phoneNumber": "+1 (919) 608-0547",
   "email": "mendishreya@gmail.com",
   "address": "Durham, NC"
