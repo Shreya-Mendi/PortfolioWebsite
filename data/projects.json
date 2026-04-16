@@ -1,9 +1,79 @@
 [
   {
     "id": "1",
-    "title": "Inflationship - Inflation Prediction",
+    "title": "When2Speak — LLM Intervention Policy Agent",
+    "image": "https://via.placeholder.com/800x600/012169/FFFFFF?text=When2Speak",
+    "linkToBuild": "https://github.com/duke-trust-lab/when2speak",
+    "summary": "Trained a lightweight RL policy network for multi-agent dialogue intervention using PyTorch and NLP. Reduced unnecessary interventions by 25% while maintaining task success rate, validated on a 10,000-dialogue simulation suite via A/B testing. Co-authoring a NeurIPS submission on safe agentic AI behavior under faculty supervision at Duke Trust Lab.",
+    "technologies": [
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "PyTorch", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "UAV-SAR — Aerial Human Detection (Search & Rescue)",
+    "image": "https://via.placeholder.com/800x600/3B7EA1/FFFFFF?text=UAV-SAR",
+    "linkToBuild": "https://github.com/Shreya-Mendi",
+    "summary": "Fine-tuned Faster R-CNN on thermal SAR imagery with domain-specific augmentations (snow, smoke, sensor noise). Achieved 20% recall improvement under adverse conditions with <5% clean-data accuracy loss. Built end-to-end CV pipeline in PyTorch with custom data loaders and metrics optimized for safety-critical deployment.",
+    "technologies": [
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "PyTorch", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+      { "title": "TensorFlow", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "BMW Capstone — Industrial AI Inventory Decision System",
+    "image": "https://via.placeholder.com/800x600/012169/FFFFFF?text=BMW+Capstone",
+    "linkToBuild": "https://github.com/Shreya-Mendi",
+    "summary": "Built and evaluated ML regression models (LightGBM, Ridge, MLP, Optuna-tuned TabularMLP) on real BMW dealer sales data to predict inventory turnover speed. Delivered explainable AI-driven inventory recommendations through a live REST API and interactive dealer dashboard, enabling data-informed spec decisions without requiring ML expertise.",
+    "technologies": [
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "FastAPI", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Safe-T — AI Equity Audit for Transportation Safety",
+    "image": "https://via.placeholder.com/800x600/3B7EA1/FFFFFF?text=Safe-T",
+    "linkToBuild": "https://github.com/Shreya-Mendi",
+    "summary": "Audited transportation AI allocation algorithms for racial and economic bias across Durham, NC — documenting that Black residents (32% of population) account for 47% of pedestrian/cyclist crash victims, driven by systematic 20-30% undercounting of demand in low-income and high-minority census tracts. Built an interactive Leaflet mapping platform comparing AI-predicted vs. need-based infrastructure allocation using Census, NCDOT crash records, and OpenStreetMap data.",
+    "technologies": [
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "Jupyter", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Mirror — Reflective AI Mental Wellness Companion",
+    "image": "https://via.placeholder.com/800x600/012169/FFFFFF?text=Mirror",
+    "linkToBuild": "https://github.com/Shreya-Mendi/Mirror",
+    "summary": "Built a reflective AI journaling companion using RAG over 8 psychological frameworks (CBT, IFS, NVC, Attachment Theory) to pattern-match emotional entries. Implemented cognitive distortion profiling across 4 distortion types and weekly self-awareness reports. Deployed full-stack Python/FastAPI on Railway with session persistence, mood trend tracking (1–10 daily score), and a trigger map logging recurring emotional patterns.",
+    "technologies": [
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "FastAPI", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+      { "title": "Docker", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "CineStyle — Multimodal Fashion Discovery from Film & TV",
+    "image": "https://via.placeholder.com/800x600/012169/FFFFFF?text=CineStyle",
+    "linkToBuild": "https://github.com/Shreya-Mendi/CineStyle",
+    "summary": "Built a film-to-fashion identification platform using FashionCLIP (512-dim embeddings) and FAISS GPU vector search over 20,000 Fashionpedia garment crops across 46 categories. Four-stage recommendation pipeline (FAISS → NeuMF → SASRec → diversity filter) with measurable NDCG@10 gains over a popularity baseline. Deployed FastAPI on Railway, Next.js on Vercel; evaluated on Precision@K, Recall@K, and MAP@K with 500 synthetic users × 30 interactions.",
+    "technologies": [
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "FastAPI", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+      { "title": "Next.js", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+      { "title": "Docker", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" }
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Inflationship — Macroeconomic Forecasting",
     "image": "https://via.placeholder.com/800x600/012169/FFFFFF?text=Inflationship",
-    "linkToBuild": "https://github.com/Shreya-Mendi/inflationship",
+    "linkToBuild": "https://github.com/Shreya-Mendi/Inflationship",
     "summary": "Built a SARIMAX inflation forecasting pipeline combining port traffic indicators with CPI data, reducing forecast error to 0.67–1.69% MAPE across major CPI categories. Validated model stability via 5-fold rolling cross-validation, achieving reliable predictive lift over CPI-only baselines.",
     "technologies": [
       { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
@@ -12,10 +82,10 @@
     ]
   },
   {
-    "id": "2",
-    "title": "Alba - AI Carbon Footprint Tracker",
+    "id": "7",
+    "title": "Alba — AI Carbon Footprint Tracker",
     "image": "https://via.placeholder.com/800x600/3B7EA1/FFFFFF?text=Alba",
-    "linkToBuild": "https://github.com/Shreya-Mendi/alba",
+    "linkToBuild": "https://github.com/lindsaygross/Alba",
     "summary": "Built a real-time, privacy-first Chrome extension estimating energy, carbon, and water footprint for AI prompts using model metadata and GitHub Models API. Implemented live footprint labels, heuristic + AI prompt optimization, and a client-side dashboard with daily impact summaries.",
     "technologies": [
       { "title": "JavaScript", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
@@ -24,10 +94,10 @@
     ]
   },
   {
-    "id": "3",
-    "title": "AI AUDIT - EU AI Act Compliance",
+    "id": "8",
+    "title": "AI Audit — EU AI Act Compliance System",
     "image": "https://via.placeholder.com/800x600/012169/FFFFFF?text=AI+AUDIT",
-    "linkToBuild": "https://github.com/Shreya-Mendi/ai-audit",
+    "linkToBuild": "https://github.com/lindsaygross/AIAudit",
     "summary": "Built an EU AI Act compliance assessment system using TF-IDF + Logistic Regression, rule-based article evaluation (Articles 5, 6, 9, 10, 14), and automated remediation planning. Deployed full-stack ML workflow with MLflow, FastAPI, Docker, and Streamlit on Google Cloud Run, enabling explainable risk scoring and documentation audits.",
     "technologies": [
       { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
@@ -37,11 +107,11 @@
     ]
   },
   {
-    "id": "4",
-    "title": "Semantic Jury - Legal Search Engine",
+    "id": "9",
+    "title": "Semantic Jury — Legal Semantic Search Engine",
     "image": "https://via.placeholder.com/800x600/3B7EA1/FFFFFF?text=Semantic+Jury",
-    "linkToBuild": "https://github.com/Shreya-Mendi/semantic-jury",
-    "summary": "Developed a semantic search engine for legal documents using embedding-based retrieval and citation-link modeling to surface semantically similar case law and statutes. Implemented vector search pipelines with passage ranking to support explainable legal research and faster knowledge discovery.",
+    "linkToBuild": "https://github.com/Shreya-Mendi/SemanticJury",
+    "summary": "Developed a semantic search engine for legal documents using embedding-based retrieval and citation-link modeling to surface semantically similar case law and statutes. Implemented vector search pipelines with passage ranking to support explainable legal research and faster knowledge discovery. Live demo on HuggingFace Spaces.",
     "technologies": [
       { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
       { "title": "TensorFlow", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },

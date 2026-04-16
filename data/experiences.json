@@ -1,6 +1,54 @@
 [
   {
     "id": "1",
+    "jobTitle": "Research Assistant",
+    "companyImage": "https://via.placeholder.com/200x200/012169/FFFFFF?text=Duke+Trust+Lab",
+    "company": "Duke Trust Lab",
+    "dateStarted": "2026-01-01",
+    "dateEnded": null,
+    "isCurrentlyWorkingHere": true,
+    "technologies": [
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "PyTorch", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" }
+    ],
+    "points": [
+      "Co-authoring a NeurIPS submission on safe agentic AI behavior and intervention policy under faculty supervision; leading experimental design, evaluation framework construction, and manuscript preparation.",
+      "Developed benchmarking pipelines across 3+ research projects measuring model calibration, AI transparency, and decision reliability in high-stakes deployment settings."
+    ]
+  },
+  {
+    "id": "2",
+    "jobTitle": "Student Consultant",
+    "companyImage": "https://via.placeholder.com/200x200/012169/FFFFFF?text=BMW+Group",
+    "company": "BMW Group (Duke Capstone)",
+    "dateStarted": "2026-01-01",
+    "dateEnded": null,
+    "isCurrentlyWorkingHere": true,
+    "technologies": [
+      { "title": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "title": "FastAPI", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" }
+    ],
+    "points": [
+      "Built and evaluated multiple ML regression models (LightGBM, Ridge, MLP, Optuna-tuned TabularMLP) on real BMW dealer sales data to predict inventory turnover speed; ranked product configurations by predicted sell performance across the full vehicle lineup.",
+      "Delivered explainable AI-driven inventory recommendations through a live REST API and interactive dealer dashboard, enabling business teams to make data-informed spec decisions with transparent model confidence."
+    ]
+  },
+  {
+    "id": "3",
+    "jobTitle": "Teaching Assistant, Managing AI in Business",
+    "companyImage": "https://via.placeholder.com/200x200/012169/FFFFFF?text=Duke",
+    "company": "Duke University",
+    "dateStarted": "2026-01-01",
+    "dateEnded": null,
+    "isCurrentlyWorkingHere": true,
+    "technologies": [],
+    "points": [
+      "Facilitate discussion sections and office hours for a graduate-level course covering AI strategy, LLM deployment, and responsible AI adoption; support 40+ MEng students on project design and technical implementation.",
+      "Evaluate student AI system proposals and provide structured feedback on model selection, deployment tradeoffs, and business impact framing across industry-sponsored capstone projects."
+    ]
+  },
+  {
+    "id": "4",
     "jobTitle": "DevOps Engineer",
     "companyImage": "https://via.placeholder.com/200x200/012169/FFFFFF?text=Assetmantle",
     "company": "Assetmantle Pvt Ltd",
@@ -13,12 +61,12 @@
       { "title": "Docker", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" }
     ],
     "points": [
-      "Strategically managed AWS and Hetzner cloud infrastructure to reduce operational costs by 38% and enhanced security",
-      "Streamlined CI/CD pipelines with Kubernetes which increased deployment frequency and reduced time-to-market"
+      "Reduced AWS/Hetzner infrastructure costs by 38% through architecture optimization and automated CI/CD (Docker, Kubernetes) with rollout/rollback policies, maintaining 99%+ uptime across distributed nodes.",
+      "Streamlined CI/CD pipelines with Kubernetes which increased deployment frequency and reduced time-to-market."
     ]
   },
   {
-    "id": "2",
+    "id": "5",
     "jobTitle": "Software Development Intern",
     "companyImage": "https://via.placeholder.com/200x200/3B7EA1/FFFFFF?text=HPE",
     "company": "Hewlett Packard Enterprise Globalsoft Pvt Ltd",
@@ -32,8 +80,8 @@
       { "title": "Linux", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" }
     ],
     "points": [
-      "Built Dockerized services on Linux, automating CI/CD workflows with Jenkins, shell scripting, and cloud computing platforms",
-      "Integrated REST APIs in Python for monitoring using Grafana & Prometheus improving the overall stability of the product"
+      "Built Dockerized services on Linux, automating CI/CD workflows with Jenkins, shell scripting, and cloud computing platforms.",
+      "Integrated REST APIs in Python for monitoring using Grafana & Prometheus improving the overall stability of the product."
     ]
   }
 ]
