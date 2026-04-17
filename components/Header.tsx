@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { Social } from "../typings";
+import HeaderCat from "./HeaderCat";
 
 type Props = {
   socials: Social[];
@@ -12,22 +13,15 @@ export default function Header({ socials }: Props) {
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
-        initial={{
-          x: -500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{
-          duration: 1.5,
-        }}
-        className=" flex flex-row items-center"
+        initial={{ x: -500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-row items-center gap-1"
       >
-        {/* React social icons */}
+        {/* Cat mascot */}
+        <HeaderCat />
+
+        {/* Social icons */}
         {socials.map((social) => (
           <SocialIcon
             key={social._id}
@@ -40,19 +34,9 @@ export default function Header({ socials }: Props) {
 
       <Link href="#contact">
         <motion.div
-          initial={{
-            x: 500,
-            opacity: 0.5,
-            scale: 0.5,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 1.5,
-          }}
+          initial={{ x: 500, opacity: 0.5, scale: 0.5 }}
+          animate={{ x: 0, opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5 }}
           className="flex flex-row items-center text-gray-300 cursor-pointer"
         >
           <SocialIcon

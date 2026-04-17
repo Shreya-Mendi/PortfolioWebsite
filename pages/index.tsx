@@ -13,6 +13,7 @@ import WorkExperience from "../components/WorkExperience";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import ContactMe from "../components/ContactMe";
+import LeftPawPrints from "../components/LeftPawPrints";
 import Link from "next/link";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import Script from "next/script";
@@ -51,6 +52,9 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
            gtag('js', new Date());
            gtag('config', 'G-LV1LN9VBT0')`}
       </Script>
+
+      {/* Floating paw prints on left */}
+      <LeftPawPrints />
 
       {/* Header */}
       <Header socials={socials} />
