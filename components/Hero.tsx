@@ -1,19 +1,18 @@
 import Link from "next/link";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import { urlFor } from "../sanity";
 import { PageInfo } from "../typings";
 import BackgroundCircles from "./BackgroundCircles";
 
 type Props = { pageInfo: PageInfo };
 
 export default function Hero({ pageInfo }: Props) {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
-      `Hi, I'm ${pageInfo?.name}`,
-      "Machine Learning Engineer",
-      "Building AI systems with impact",
-      "Duke MEng in AI Student",
+      `Hi, I'm ${pageInfo?.name} 👋`,
+      "ML Engineer & AI Builder",
+      "Duke MEng AI Student 🔵",
+      "Building systems with impact",
       "Let's build something amazing!",
     ],
     loop: true,
@@ -25,9 +24,9 @@ export default function Hero({ pageInfo }: Props) {
       <BackgroundCircles />
 
       <img
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src={urlFor(pageInfo?.heroImage).url()}
-        alt=""
+        className="relative rounded-full h-32 w-32 mx-auto object-cover ring-4 ring-dukeBlue/30 shadow-xl"
+        src={pageInfo?.heroImage || "https://ui-avatars.com/api/?name=Shreya+Mendi&size=200&background=012169&color=FFFFFF&bold=true"}
+        alt="Shreya Mendi"
       />
 
       <div className="z-20">
@@ -36,7 +35,7 @@ export default function Hero({ pageInfo }: Props) {
         </h2>
         <h1 className="text-2xl md:text-5xl lg:text-6xl font-semibold px-10">
           <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#68B2A0" />
+          <Cursor cursorColor="#012169" />
         </h1>
 
         <div className="pt-5">

@@ -1,9 +1,7 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import styles from "../styles/Home.module.css";
 import { Experience, PageInfo, Skill, Project, Social } from "../typings";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchExperiences } from "../utils/fetchExperience";
@@ -31,41 +29,27 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
   return (
     <div
       className="bg-lightBackground text-darkBlack h-screen snap-y snap-mandatory
-    overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-darkGreen/80"
+    overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-dukeBlue/60"
     >
       <Head>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <title>{"Mitch's Portfolio"}</title>
+        <title>Shreya Mendi — AI Engineer & ML Builder</title>
+        <meta name="description" content="Portfolio of Shreya Mendi — MEng AI student at Duke University, ML Engineer, AI Product Builder" />
       </Head>
 
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-LV1LN9VBT0"
         strategy="afterInteractive"
-      ></Script>
+      />
       <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}
            gtag('js', new Date());
            gtag('config', 'G-LV1LN9VBT0')`}
-        ;
       </Script>
 
       {/* Header */}
@@ -91,7 +75,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
         <Skills skills={skills} />
       </section>
 
-      {/* Projects */}
+      {/* Projects — no snap so grid can scroll freely */}
       <section id="projects" className="snap-start">
         <Projects projects={projects} />
       </section>
@@ -104,8 +88,8 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <div className="h-10 w-10 bg-darkGreen/80 rounded-full flex items-center justify-center">
-              <HomeIcon className="h-7 w-17 pb-0.5 hover:grayscale-100 text-white animate-pulse" />
+            <div className="h-10 w-10 bg-dukeBlue/80 rounded-full flex items-center justify-center shadow-lg hover:bg-dukeBlue transition-colors duration-200">
+              <HomeIcon className="h-6 w-6 text-white animate-pulse" />
             </div>
           </div>
         </footer>
