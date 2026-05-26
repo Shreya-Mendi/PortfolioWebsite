@@ -1,6 +1,6 @@
-import { projectsData } from "../data/projects";
 import { Project } from "../typings";
+import { fetchGitHubProjects } from "./fetchGitHubProjects";
 
 export const fetchProjects = async (): Promise<Project[]> => {
-  return projectsData as Project[];
+  return fetchGitHubProjects();
 };
