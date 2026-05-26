@@ -10,7 +10,7 @@ export default function LeftPawPrints() {
           className="absolute"
           style={{
             top: `${position * 100}%`,
-            left: `${30 + Math.sin(position * 8) * 20}px`,
+            left: `${Math.round(30 + Math.sin(position * 8) * 20)}px`,
           }}
           animate={{
             opacity: [0.4, 1, 0.4],

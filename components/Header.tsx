@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { SocialIcon } from "react-social-icons";
 import { Social } from "../typings";
 import HeaderCat from "./HeaderCat";
-import { LightBulbIcon } from "@heroicons/react/24/solid";
+import { LightBulbIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
 type Props = {
   socials: Social[];
@@ -17,17 +16,22 @@ export default function Header({ socials }: Props) {
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-row items-center gap-1"
+        className="flex flex-row items-center gap-2"
       >
         <HeaderCat />
 
         {socials.map((social) => (
-          <SocialIcon
+          <a
             key={social._id}
-            url={social.url}
-            fgColor="gray"
-            bgColor="transparent"
-          />
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-dukeBlue transition-colors"
+          >
+            <span className="uppercase text-xs tracking-wider hidden md:inline">
+              {social.title}
+            </span>
+          </a>
         ))}
       </motion.div>
 
@@ -47,14 +51,9 @@ export default function Header({ socials }: Props) {
         </Link>
 
         <Link href="/#contact">
-          <div className="flex flex-row items-center text-gray-300 cursor-pointer">
-            <SocialIcon
-              className="cursor-pointer"
-              network="email"
-              fgColor="grey"
-              bgColor="transparent"
-            />
-            <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          <div className="flex flex-row items-center cursor-pointer group gap-1.5">
+            <EnvelopeIcon className="h-5 w-5 text-gray-400 group-hover:text-dukeBlue transition-colors" />
+            <p className="uppercase hidden md:inline-flex text-sm text-gray-400 group-hover:text-dukeBlue transition-colors">
               Get in touch
             </p>
           </div>
