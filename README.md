@@ -1,5 +1,7 @@
 # Shreya Mendi's Portfolio Website
 
+🔗 **Live site:** [portfolio-website-five-theta-67.vercel.app](https://portfolio-website-five-theta-67.vercel.app/)
+
 A modern, responsive portfolio website built with Next.js, TypeScript, Framer Motion, and Tailwind CSS. This portfolio showcases my work as a Machine Learning Engineer and AI Product Engineer, featuring my projects, work experience, skills, and professional background.
 
 The portfolio uses Sanity CMS as a backend, enabling dynamic content updates without rebuilding the application. This architecture provides flexibility for keeping the portfolio up-to-date with latest projects and achievements.
